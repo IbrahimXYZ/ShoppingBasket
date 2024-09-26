@@ -1,14 +1,15 @@
 class Basket{
     constructor(){
+        // empty object for prices
         this.items = {}
     }
 
     addItem(itemName, quantity = 1){
-
+        //validating item name
         if(typeof itemName != "string" || itemName.trim() === ""){
             throw new Error ("Item must not be an empty string");
         }
-
+        // validating item quantity
         if (!Number.isInteger(quantity) || quantity <= 0){
             throw new Error ("Quantity must be a positive integer");
             
