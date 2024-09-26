@@ -1,9 +1,11 @@
 class Catalogue{
     constructor(){
+        // initializing array to hold offers
         this.items = {}
     }
 
     addItem(itemName,itemPrice){
+        // validating item name and price
         if (typeof itemName !== "string" || itemName.trim() === ""){
             throw new Error("Item name must be a non-empty string")
         }
@@ -11,7 +13,7 @@ class Catalogue{
         if (typeof itemPrice !== "number" || itemPrice <= 0){
             throw new Error("Item price must be a positive number")
         }
-
+        // validating if item already exists in the catalogue
         if(this.items.hasOwnProperty(itemName)){
             throw new Error("Item already exists")
         }
@@ -40,6 +42,7 @@ class Catalogue{
     }
 
     getItems(){
+        // returns a copy of all items in the catalogue
         return {
             ...this.items
         }
