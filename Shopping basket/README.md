@@ -1,18 +1,51 @@
-# Shopping Basket Pricer
+# Shopping Basket
 
-This is a **shopping basket pricing library** for a supermarket. The basket-pricer component calculates the sub-total, discount, and total price for a given basket of goods. It applies various offers to determine the final price.
+## Table of Contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Components](#components)
+- [Running the Code](#running-the-code)
 
-## Features
-- **Catalogue**: Holds the items and their prices.
-- **Basket**: Represents a customer's shopping basket, allowing items to be added.
-- **Offers**: Defines and applies offers such as percentage discounts or "buy X get Y free."
-- **Basket Pricer**: Calculates the total price, including any applicable discounts.
 
----
+## Description
+This is a shopping basket application that allows users to manage their shopping items, apply discounts, and calculate the total price of their basket. The application implements various offers like "Buy X Get Y Free" and percentage discounts.
 
 ## Installation
-
-1. **Clone the repository**:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/IbrahimXYZ/Shopping-Basket.git
-   cd shopping-basket-pricer
+   git clone <https://github.com/IbrahimXYZ/ShoppingBasket>
+   cd <Shopping\ basket>
+
+## Usage
+
+To use this project, follow these steps:
+
+1. Ensure you have Node.js installed on your machine.
+2. Create an instance of the `Catalogue`, `Basket`, `OfferMain`, and `BasketPricer` classes in `index.js`.
+3. Run the `index.js` file using Node.js:
+   ```bash
+   node src/index.js
+   ```
+
+## Components
+
+The application consists of the following components:
+
+- **Basket**: Manages items in the shopping basket.
+- **Catalogue**: Stores the available items and their prices.
+- **OfferMain**: Manages various offers that can be applied to the basket.
+- **offer**: Stores the specific offers that can be applied.
+- **BuyXGetYFree**: A specific offer type that provides a discount when a certain number of items are purchased.
+- **PercentageDiscount**: A specific offer type that provides a percentage discount on an item.
+- **BasketPricer**: Calculates the total price of items in the basket after applying any discounts.
+
+## Running the Code
+
+To run the code, follow these steps:
+
+1. Open a terminal and navigate to the project directory.
+2. Use Node.js to execute the `index.js` file:
+   ```bash
+   node src/index.js
+   ```
