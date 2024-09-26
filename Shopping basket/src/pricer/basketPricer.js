@@ -1,6 +1,6 @@
 class BasketPricer{
     constructor(basket,catalogue,offerMain){
-
+        // validate parameters
         if (!basket || typeof basket.getItems != "function"){
             throw new Error("Invalid basket object")
         }
@@ -37,13 +37,14 @@ class BasketPricer{
     }
 
     applyOffers(){
+        // returns total discount
         return this.offerMain.calculateDiscount(this.basket,this.catalogue)
     }
 
     calculateTotal(){
         const subtotal = this.calculateSubtotal();
         const discount = this.applyOffers();
-
+        // validates if discount is a positive integer
         if(discount < 0){
             throw new Error("Discount must be a positive integer");
             
