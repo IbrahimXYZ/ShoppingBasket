@@ -1,0 +1,12 @@
+{
+  "name": "shopping-basket",
+  "version": "1.0.0",
+  "description": "This is a **shopping basket pricing library** for a supermarket. The basket-pricer component calculates the sub-total, discount, and total price for a given basket of goods. It applies various offers to determine the final price.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
