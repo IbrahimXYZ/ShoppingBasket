@@ -6,6 +6,7 @@
 - [Usage](#usage)
 - [Components](#components)
 - [Running the Code](#running-the-code)
+- [Improvements](#improvements)
 
 
 ## Description
@@ -49,3 +50,14 @@ To run the code, follow these steps:
    ```bash
    node src/index.js
    ```
+
+
+
+## Improvements
+
+Here are a few ideas for potential improvements that could be made to the project:
+
+- **Error Handling**: More sophisticated error handling can be added to improve user feedback.
+- **Unit Testing**: Implement unit tests using a testing framework like Jest to ensure code reliability and maintainability.
+- **Database Integration**: Using a database to store items and prices like MongoDB, allowing for dynamic updates.
+- **Unique Discounts**: Allow more dynamic and flexible discount types, such as time-limited offers or location-based discounts.
