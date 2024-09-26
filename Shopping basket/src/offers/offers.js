@@ -1,6 +1,6 @@
 class BuyXGetYFree{
     constructor(itemName,x,y){
-
+        //validation of parameters
         if(typeof itemName !== "string" || !itemName.trim()){
             throw new Error("Item name must not be an empty string")
         }
@@ -14,8 +14,8 @@ class BuyXGetYFree{
 
 
         this.itemName = itemName
-        this.y = y
-        this.x = x
+        this.y = y // Number of free items
+        this.x = x // Number of items needed to buy
     }
 
     apply(basket,catalogue){
